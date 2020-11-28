@@ -300,7 +300,7 @@ root 를 제외한 나머지 계정 접근금지
 
 <br />
 
-|: /etc/group 설명 |||:|
+| :       /etc/group 설명			: ||||
 | :---: | :---: | :---: | :---: |
 | mail | x | 12 | postfix,exim |
 | group name | password | GroupID | Usre List |
@@ -311,7 +311,7 @@ root 를 제외한 나머지 계정 접근금지
 
 <br />
 
-|: /etc/gshadow 설명 |||:|
+| : /etc/gshadow 설명 				: ||||
 | :---: | :---: | :---: | :---: |
 | mail | ! | name | postfix,exim |
 | group name | Encrypted Password | Administrators | Usre List |
