@@ -457,7 +457,7 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 | 색션 및 지서어 | 설명 | 
 | :---: | :--- |
 | [Install] | Install 섹션은 부팅 시에 이 Unit 의 활성화나 비활성화를 위해 명령어 systemctl enable 과 disable 이 사용하는 Unit 설치에 관련된 내용을 포함하고 있다. |
-| WantedBy | Unit 과 약한 의존관계를 맺는 Unit 의 목록을 지정하는데, 이 Unit 이 활성화되면 WantedBy 에 기록된 Unit과Want 의존관계를 맺게 된다. | 
+| WantedBy | Unit 과 약한 의존관계를 맺는 Unit 의 목록을 지정하는데, 이 Unit 이 활성화되면 WantedBy 에 기록된 Unit과 Want 의존관계를 맺게 된다. | 
 | RequiredBy | 강한( 반드시 필요한 ) 의존관계를 맺는 Unit 의 이름을 지정한다. |
 
 <br />
