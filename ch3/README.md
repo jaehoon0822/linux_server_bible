@@ -6,7 +6,7 @@
 
 <br />
 
-<table style="width: 100%; margin: auto; text-align: center;">
+<table style="width:100%;margin:auto;text-align:center;">
 	<thead>
 		<tr>
 			<th colspan="2">Systemd 구성요소</th>
