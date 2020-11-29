@@ -1,3 +1,11 @@
+<style>
+
+	#tb {
+		margin: auto;
+		text-align: center;
+	}
+</style>
+
 # 서비스 관리
 
 <br />
@@ -6,21 +14,21 @@
 
 <br />
 
-<table style="width:100%;margin:auto;text-align:center;">
-	<thead>
+<table>
+	<thead id="tb">
 		<tr>
 			<th colspan="2">Systemd 구성요소</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr style="background-color:#eee;">
+		<tr>
 			<td> Systemd 데몬</td>
 			<td> Systemd 타겟</td>
 		<tr>
 		<tr>
 			<td colspan="2"> Systemd 코어</td>
 		<tr>
-		<tr style="background-color:#eee;">
+		<tr>
 			<td colspan="2"> Systemd 라이브러리</td>
 		<tr>
 		<tr>
@@ -29,7 +37,7 @@
 	</tbody>
 <table>
 
-</br />
+<br />
 	
 
 | 			Systemd 구성요소 		 |> |
