@@ -219,6 +219,158 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <br />
 
+### 서비스 활성화 관련 명령어
+
+<br />
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				Systemctl 서비스 활성화 명령어
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th> enable </th>
+			<td>
+				부팅시 서비스가 자동으로 시작되도록 Unit 파일 명령어 enabel 사용 <br />
+				이때 이 서비스 Target 이 저장된 디렉토리에서 /etc/systemd/system 으로 링크파일이 생성, 시스템이 multi-user.target 에서 시작할 경우 자동으로 이서비스를 시작하라는 의미. <br /> 이때 링크파일은Systemd Unit 파일에서 Install 섹션이 정의된 경우에 생성된다.
+			</td>
+		</tr>
+		<tr>
+			<th> reenabel </th>
+			<td>
+				기존의 서비스를 비솰성화( 링크 제거 ) 후 다시 이 서비스를 활성화( 링크 재생성 ) 	
+			</td>
+		</tr>
+		<tr>
+			<th> disable </th>
+			<td>
+				서비스를 비활성화, 이를 위해 Unit file 의 Install 섹션을 확인후 생성했던 링크파일 제거
+			</td>
+		</tr>
+		<tr>
+			<th> is-active </th>
+			<td>
+				현재 서비스가 실행중인지 확인	
+			</td>
+		</tr>
+		<tr>
+			<th> is-enabled </th>
+			<td>
+				현재 서비스가 활성화, 비활성화 됬는지 확인 	
+			</td>
+		</tr>
+		<tr>
+			<th> is-failed </th>
+			<td>
+				서비스 시작이 실패했는지 확인	
+			</td>
+		</tr>
+		<tr>
+			<th> mask </th>
+			<td>
+				해당 서비스를 systemd 에서사용하지 않기 위해 사용, 이 명령어는 /etc/systemd/system 에 있는 Unit 파일이 /dev/null 로 변경된다. 이 서비스 Unit 에 접근하지 말라는 의미이며, mask 로 표시됬다는 메세지를 알린다.	
+			</td>
+		</tr>
+		<tr>
+			<th> unmask </th>
+			<td>
+				mask 상태를 해제	
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br />
+
+### 서비스 상태 확인 명령어
+
+<br />
+
+#### 로커 서버 서비스 상태 확인
+
+<br />
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				로컬 서버에서 서비스 상태 확인 명령어
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th> status </th>
+			<td>
+				서비스 상태 확인
+				<br />
+				active( 상태 ) 및 서비스가사용되는 PID, 그리고 나머지 정보를 확인 가능
+			</td>
+		</tr>
+		<tr>
+			<th> cat </th>
+			<td>
+				Unit 파일을 확인할 경우 사용
+				<br/>
+				직접 수정할 경우 edit을 사용
+			</td>
+		</tr>
+		<tr>
+			<th> show </th>
+			<td>
+				서비스가 사용하는 모든 속성 정보를 확인
+			</td>
+		</tr>
+		<tr>
+			<th> list-dependencies </th>
+			<td>
+				서비스 시작전 필요한 서비스를 순서대로 정리되어 나열
+			</td>
+		</tr>
+		<tr>
+			<th> list-units --type service </th>
+			<td>
+				현재 사용 가능한 서비스 Unit 목록확인 
+			</td>
+		</tr>
+		<tr>
+			<th> list-unit-files </th>
+			<td>
+				설치된모든 Unit 파일의 목록을 확인
+			</td>
+		</tr>
+		<tr>
+			<th> list-unit-files --type service </th>
+			<td>
+				모든 사용 가능한 서비스 Unit 의 활성화 또는 비활성화 상태 목록을 확인
+			</td>
+		</tr>
+		<tr>
+			<th> list-units --all --state=inactive</th>
+			<td>
+				비활성화 된 모든 Unit 목록
+			</td>
+		</tr>
+		<tr>
+			<th> list-dependencies --after nginix.service </th>
+			<td>
+				Nginix 서비스가 시작되기 전에 실행되야할 서비스 목록을 순서대로 보여준다.
+			</td>
+		</tr>
+		<tr>
+			<th> list-dependencies --befor nginix.service </th>
+			<td>
+				Nginix 서비스가 시작된후 실행되야할 서비스 목록을 순서대로 보여준다.
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br />
 
 
 
