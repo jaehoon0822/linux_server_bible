@@ -6,10 +6,10 @@
 
 <br />
 
-<table>
+<table style="width: 100%; margin: auto">
 	<thead>
 		<tr>
-			<th colspan="2">Systemd 구성요소<th>
+			<th colspan="2">Systemd 구성요소</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,7 +27,7 @@
 			<td colspan="2"> 리눅스 커널</td>
 		<tr>
 	</tbody>
-</table>
+<table>
 
 </br />
 	
