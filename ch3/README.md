@@ -290,7 +290,7 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <br />
 
-#### 로커 서버 서비스 상태 확인
+#### 로컬서버 서비스 상태 확인
 
 <br />
 
@@ -372,9 +372,38 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <br />
 
+### 원격 서버 서비스 상태 확인
 
 
-
+<table>
+	<thead>
+		<tr>
+			<th colspan="2">
+				원겨서버 서비스 상태 확인
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th> -H root@node status serviceName.server </th>
+			<td>
+				-H 옵션에 사용자와 노드를 지정, 명령어 systemctl 을 이용하면 패스워드를 요구, 입력후 그 상태확인 가능
+			</td>
+		</tr>
+		<tr>
+			<th> -H root@node start serviceName.service </th>
+			<td>
+				서비스 시작 시도
+			</td>
+		</tr>
+		<tr>
+			<th> -H root@node stop serviceName.service </th>
+			<td>
+				서비스중지
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 
