@@ -13,14 +13,14 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+		<tr style="background-color:#eee;">
 			<td> Systemd 데몬</td>
 			<td> Systemd 타겟</td>
 		<tr>
 		<tr>
 			<td colspan="2"> Systemd 코어</td>
 		<tr>
-		<tr>
+		<tr style="background-color:#eee;">
 			<td colspan="2"> Systemd 라이브러리</td>
 		<tr>
 		<tr>
