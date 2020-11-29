@@ -374,6 +374,7 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 ### 원격 서버 서비스 상태 확인
 
+<br />
 
 <table>
 	<thead>
@@ -405,6 +406,28 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 	</tbody>
 </table>
 
+<br />
+
+## System Unit 파일다루기
+
+<br />
+
+### System Unit 파일 이해
+
+<br />
+
+| 섹션 및 지시어 | 설명 |
+| :---: | :--- |
+| [Unit] | Unit 섹션을 의미 |
+| Description | Unit 섹션이 제공하는 기본적인 기능과 관련있는 의미있는 설명, systemctl status 를 사용하면 그 내용을 읽을 수 있다. |
+| Doucmentation | Unit 과 관련있는 문서의 위치를 표시, man 과 URI 를 통해 그경로를 제공 |
+| After | Unit 이시작되기 전에 시작돼야 할 Unit | 
+| Before | Unit 이 시작후에 시작돼야 할 Unit |
+| Requires | 의존 관계에 있는 Unit 이 실행되지 않는다면, 이 Unit 도 실행할 수 없다. 
+| Wants | Requires 보다 더 약한 개념으로, 이 Unit 과 의존 관계에 있지만 설령 그 서비스가 시작되지 않더라도 이 Unit 의 서비스 실행에는 영향을 주지 않는다. | 
+| Conflicts | Requires 와는 반대개념으로 같이 사용할 수 없는 Unit 을 말한다. 만약 같이 사용된다면 실행되지 않는다. |
+
+<br />
 
 
 
