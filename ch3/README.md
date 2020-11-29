@@ -297,7 +297,7 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 <table>
 	<thead>
 		<tr>
-			<th>
+			<th colspan="2">
 				로컬 서버에서 서비스 상태 확인 명령어
 			</th>
 		</tr>
