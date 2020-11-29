@@ -166,50 +166,50 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 <table>
 	<thead>
 		<tr>
-			<td colspan="2">
+			<th colspan="2">
 			Systemctl 명령어	
-			</td>
+			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td> start </td>	
+			<th> start </th>	
 			<td>
 				서비스를 시작하는 명령어						
 			</td>	
 		</tr>
 		<tr>
-			<td> stop </td>	
+			<th> stop </th>	
 			<td>
 				서비스를 중지하는 명령어	
 			</td>	
 		</tr>
 		<tr>
-			<td> restart </td>	
+			<th> restart </th>	
 			<td>
 				현재 서비스를 중단하고, 다시 시작하는 명령어	
 			</td>	
 		</tr>
 		<tr>
-			<td> reload </td>	
+			<th> reload </th>	
 			<td>
 				서비스를 중단않고 다시 시작하는 명령어	
 			</td>	
 		</tr>
 		<tr>
-			<td> try-restart </td>	
+			<th> try-restart </th>	
 			<td>
 				이미실행되고 있다면, 다시 시작하라는 관리 명령어	
 			</td>	
 		</tr>
 		<tr>
-			<td> isolate </td>	
+			<th> isolate </th>	
 			<td>
 				해당 서비스만 시작하고 나머지 서비스는 모두 중지	
 			</td>	
 		</tr>
 		<tr>
-			<td> daemon-reload </td>	
+			<th> daemon-reload </th>	
 			<td>
 				관리자가 System Unit 파일을 새로 생성하거나 수정했다면 그 파일을 Systemd 가인식하기 위해 모든 Unit 파일을 다시 읽어 들이는데 사용
 			</td>	
