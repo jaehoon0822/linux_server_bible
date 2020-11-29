@@ -14,20 +14,20 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="2"> Systemd 유틸리티</td>
+			<th colspan="2"> Systemd 유틸리티</th>
 		<tr>
 		<tr>
-			<td> Systemd 데몬</td>
-			<td> Systemd 타겟</td>
+			<th> Systemd 데몬</th>
+			<th> Systemd 타겟</th>
 		<tr>
 		<tr>
-			<td colspan="2"> Systemd 코어</td>
+			<th colspan="2"> Systemd 코어</th>
 		<tr>
 		<tr>
-			<td colspan="2"> Systemd 라이브러리</td>
+			<th colspan="2"> Systemd 라이브러리</th>
 		<tr>
 		<tr>
-			<td colspan="2"> 리눅스 커널</td>
+			<th colspan="2"> 리눅스 커널</th>
 		<tr>
 	</tbody>
 <table>
@@ -416,6 +416,10 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <br />
 
+#### Unit 섹션 대한 설명
+
+<br />
+
 | 섹션 및 지시어 | 설명 |
 | :---: | :--- |
 | [Unit] | Unit 섹션을 의미 |
@@ -429,9 +433,38 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <br />
 
+#### Servise 섹션 대한 설명
 
+<br />
 
+| 섹션 및 지시어 | 설명 |
+| :---: | :--- |
+| [type] | Unit 이 사용하는 type |
+| EnvironmentFile | 서비스 환경을 설정하는 파일 지정|
+| ExecStart | Unit 이 시작될때 실행돼야할 명령어나 스크립트를 지정 |
+| ExecStop | Unit 이 중지될때 실행돼야 할 명령어나 스크립트를 지정 |
+| ExecReload | reload 가 사용될 때 실행할 명령어나 스크립트를 지정 |
+| KillMode | Unit 프로세스가 어떻게 중지되는지를 결정, precess 값은 다른 프로세스가 아니라 단지 주 프로세스만 중지하라는 의미 |
+| Restart | 값 on-failure 은 어떤 문제로 인해 0 이 아닌 Exit 코드를 보여주고 중지될 경우, 그 서비스를 다시 시작하라는 의미, <br /> 반면 on-success 가 사용되면 프로세스가 아무런 문제없이 exit 코드가 0 인 경우 다시 그 서비스를 시작하라는 의미이다. |
+| RestartSec | 서비스를다시 시작하기전 이 시간 동안 이 서비스를 sleep 상태로 두라는 의미 |
 
+<br />
+
+#### Install 섹션에 대한 설명
+
+<br />
+
+| 색션 및 지서어 | 설명 | 
+| :---: | :--- |
+| [Install] | Install 섹션은 부팅 시에 이 Unit 의 활성화나 비활성화를 위해 명령어 systemctl enable 과 disable 이 사용하는 Unit 설치에 관련된 내용을 포함하고 있다. |
+| WantedBy | Unit 과 약한 의존관계를 맺는 Unit 의 목록을 지정하는데, 이 Unit 이 활성화되면 WantedBy 에 기록된 Unit과Want 의존관계를 맺게 된다. | 
+| RequiredBy | 강한( 반드시 필요한 ) 의존관계를 맺는 Unit 의 이름을 지정한다. |
+
+<br />
+
+더 자세한 사항은 p160 을보자.
+
+<br />
 
 
 
