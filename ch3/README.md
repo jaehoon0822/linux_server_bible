@@ -165,8 +165,8 @@ httpd.service 이 Unit file 이며, service 부분을 Unit type 이라 부른다
 
 <table>
 	<thead>
-		<tr colspan="2">
-			<td>
+		<tr>
+			<td colspan="2">
 			Systemctl 명령어	
 			</td>
 		</tr>
