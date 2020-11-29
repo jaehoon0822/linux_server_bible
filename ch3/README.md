@@ -1,11 +1,3 @@
-<style>
-
-	#tb {
-		margin: auto;
-		text-align: center;
-	}
-</style>
-
 # 서비스 관리
 
 <br />
@@ -15,7 +7,7 @@
 <br />
 
 <table>
-	<thead id="tb">
+	<thead style="color:red;">
 		<tr>
 			<th colspan="2">Systemd 구성요소</th>
 		</tr>
